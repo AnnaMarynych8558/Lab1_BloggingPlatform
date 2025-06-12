@@ -1,0 +1,127 @@
+/* Custom styles for Flask Blog */
+
+/* Ensure consistent spacing and modern typography */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Post content formatting */
+.post-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.post-content p {
+    margin-bottom: 1.2rem;
+}
+
+/* Comments styling */
+.comments-list .card {
+    border-left: 3px solid var(--bs-primary);
+}
+
+/* Improved pagination */
+.pagination {
+    --bs-pagination-border-radius: 0.5rem;
+}
+
+/* Card hover effects */
+.card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation improvements */
+.navbar-brand {
+    font-weight: 600;
+}
+
+/* Form improvements */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.2rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+/* Button improvements */
+.btn {
+    font-weight: 500;
+    border-radius: 0.5rem;
+}
+
+/* Badge styling */
+.badge {
+    font-weight: 500;
+}
+
+/* Alert improvements */
+.alert {
+    border: none;
+    border-radius: 0.5rem;
+}
+
+/* Footer styling */
+footer {
+    margin-top: auto;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .btn-group-sm > .btn,
+    .btn-sm {
+        font-size: 0.8rem;
+    }
+}
+
+/* Utility classes */
+.text-break {
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+/* Loading states */
+.btn:disabled {
+    opacity: 0.65;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bs-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--bs-secondary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bs-dark);
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .btn,
+    .pagination,
+    footer {
+        display: none !important;
+    }
+}
